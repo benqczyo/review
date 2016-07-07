@@ -25,7 +25,6 @@ public class JAXPDom {
 	//org.w3c.dom w3c标准接口
 	//org.xml.sax sax接口
 	//javax.xml.parse jaxp具体实现类
-	//javax.xml.transformer 写类
 	
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
