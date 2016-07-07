@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="130" y="92">
 <fastViewData fastViewLocation="1024"/>
@@ -44,6 +44,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -53,7 +54,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JAXPDom.java" partName="JAXPDom.java" path="G:/Users/benqc/review/xml/src/jaxp/dom/JAXPDom.java" title="JAXPDom.java" tooltip="xml/src/jaxp/dom/JAXPDom.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/xml/src/jaxp/dom/JAXPDom.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="824" selectionTopPixel="226"/>
+<editorState selectionHorizontalPixel="0" selectionLength="426" selectionOffset="1717" selectionTopPixel="741"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.ClassFileEditor" name="DocumentBuilderFactory.class" partName="DocumentBuilderFactory.class" title="DocumentBuilderFactory.class" tooltip="javax.xml.parsers.DocumentBuilderFactory" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.parsers(DocumentBuilderFactory.class"/>
@@ -66,6 +67,10 @@
 <editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Result.class" partName="Result.class" title="Result.class" tooltip="javax.xml.transform.Result" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.transform(Result.class"/>
 <editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="1182" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Attr.class" partName="Attr.class" title="Attr.class" tooltip="org.w3c.dom.Attr" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;org.w3c.dom(Attr.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="7514" selectionTopPixel="2466"/>
 </editor>
 </editors>
 <views>
@@ -89,7 +94,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -241,48 +246,33 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="cvslocation">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="cvslocation">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="cvslocation">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="cvslocation">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="200" ratioRight="800" relationship="2" relative="cvslocation"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@76a6d9" ratio="0.75" ratioLeft="600" ratioRight="200" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@76a6d9" ratio="0.75" ratioLeft="600" ratioRight="200" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c42c4b" ratio="0.54953563" ratioLeft="355" ratioRight="291" relationship="4" relative="org.eclipse.ui.internal.ViewStack@76a6d9">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c42c4b" ratio="0.54953563" ratioLeft="355" ratioRight="291" relationship="4" relative="org.eclipse.ui.internal.ViewStack@76a6d9">&#x0A;<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -290,23 +280,17 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topleft" ratio="0.3993808" ratioLeft="258" ratioRight="388" relationship="4" relative="cvslocation">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<info folder="true" part="topleft" ratio="0.3993808" ratioLeft="258" ratioRight="388" relationship="4" relative="cvslocation">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="Type Hierarchy"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomleft" ratio="0.54953563" ratioLeft="355" ratioRight="291" relationship="4" relative="topleft">
-<folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">
-<page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
+<info folder="true" part="bottomleft" ratio="0.54953563" ratioLeft="355" ratioRight="291" relationship="4" relative="topleft">&#x0A;<folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">&#x0A;<page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -486,154 +470,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/xml/books.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/xml/src/jaxp/dom/JAXPDom.java"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.parsers(DocumentBuilderFactory.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.core.runtime.xml.source" path="/xml/src/books.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/xml/src/books.xml"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.transform(Transformer.class"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.transform(Result.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/xml/src/books.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;org.w3c.dom(Attr.class"/>
 </editors>
-<item historyLabel="books.xml" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1005" y="0"/>
-</item>
-<item historyLabel="DocumentBuilderFactory.class" index="2">
+<item historyLabel="DocumentBuilderFactory.class" index="1">
 <position info="not_deleted" x="1380" y="22"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1005" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1153" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1152" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position/>
-</item>
-<item historyLabel="books.xml" index="3">
-<position/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="626" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1358" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="940" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="2884" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1136" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1361" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1346" y="0"/>
-</item>
-<item historyLabel="books.xml" index="4"/>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="952" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1358" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1358" y="0"/>
-</item>
-<item historyLabel="books.xml" index="4"/>
-<item historyLabel="DocumentBuilderFactory.class" index="2">
-<position info="not_deleted" x="1380" y="22"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position info="not_deleted" x="1358" y="0"/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
-<position/>
-</item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2536" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2537" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2528" y="8"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2499" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2443" y="0"/>
 </item>
-<item historyLabel="Transformer.class" index="5">
+<item historyLabel="Transformer.class" index="3">
 <position info="not_deleted" x="4363" y="0"/>
 </item>
-<item historyLabel="Result.class" index="6">
+<item historyLabel="Result.class" index="4">
 <position info="not_deleted" x="1182" y="6"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1216" y="0"/>
 </item>
-<item historyLabel="books.xml" index="4">
+<item historyLabel="books.xml" index="2">
 <position/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1216" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="2202" y="0"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1438" y="20"/>
 </item>
-<item historyLabel="books.xml" index="4">
+<item historyLabel="books.xml" index="2">
 <position/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1438" y="20"/>
 </item>
-<item historyLabel="books.xml" index="4">
+<item historyLabel="books.xml" index="2">
 <position/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1438" y="20"/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1352" y="0"/>
 </item>
-<item historyLabel="books.xml" index="4">
+<item historyLabel="books.xml" index="2">
 <position/>
 </item>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1352" y="0"/>
 </item>
-<item historyLabel="books.xml" index="4"/>
-<item historyLabel="JAXPDom.java" index="1">
+<item historyLabel="books.xml" index="2"/>
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1616" y="0"/>
 </item>
-<item historyLabel="books.xml" index="4">
+<item historyLabel="books.xml" index="2">
 <position info="not_deleted" x="389" y="0"/>
 </item>
-<item active="true" historyLabel="JAXPDom.java" index="1">
+<item historyLabel="JAXPDom.java" index="0">
 <position info="not_deleted" x="1616" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="3136" y="20"/>
+</item>
+<item historyLabel="books.xml" index="5">
+<position info="not_deleted" x="286" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="3136" y="20"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2830" y="0"/>
+</item>
+<item historyLabel="books.xml" index="5"/>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2830" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1625" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2201" y="1"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2214" y="20"/>
+</item>
+<item historyLabel="books.xml" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2214" y="20"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1862" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2495" y="0"/>
+</item>
+<item historyLabel="books.xml" index="5">
+<position info="not_deleted" x="80" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="2495" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1706" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1810" y="0"/>
+</item>
+<item historyLabel="Attr.class" index="6">
+<position info="not_deleted" x="7514" y="4"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1810" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1900" y="0"/>
+</item>
+<item historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1717" y="426"/>
+</item>
+<item historyLabel="books.xml" index="5">
+<position info="not_deleted" x="80" y="0"/>
+</item>
+<item active="true" historyLabel="JAXPDom.java" index="0">
+<position info="not_deleted" x="1717" y="426"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -652,6 +641,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Attr.class" tooltip="org.w3c.dom.Attr">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;org.w3c.dom(Attr.class"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Result.class" tooltip="javax.xml.transform.Result">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=xml/D:\/MyEclipse 8.5\/Common\/binary\/com.sun.java.jdk.win32.x86_1.6.0.013\/jre\/lib\/rt.jar&lt;javax.xml.transform(Result.class"/>
 </file>

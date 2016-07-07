@@ -49,13 +49,8 @@ public class JAXPDom {
 		addAttr(document, document.getElementsByTagName("book").item(0));
 	}
 
-	private static void addAttr(Document document, Node node) throws TransformerException {
-		Attr attr = document.createAttribute("出版社");
-		attr.setTextContent("机械工业出版社");
-		((Element) node).setAttributeNode(attr);
-		TransformerFactory factory = TransformerFactory.newInstance();
-		Transformer transformer = factory.newTransformer();
-		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
+	private static void addAttr(Document document, Node node) {
+		
 	}
 
 	private static void dumpAttr(Document document, Node node) throws TransformerException {

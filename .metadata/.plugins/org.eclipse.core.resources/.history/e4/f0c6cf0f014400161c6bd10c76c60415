@@ -42,28 +42,14 @@ public class JAXPDom {
 		//特定节点插入元素
 		insertElement(document, document.getElementsByTagName("price").item(1));
 		//删除指定元素，必须是父元素开始
-		deleteElement(document, document.getElementsByTagName("批发价").item(0));
+		deleteElement(document, document.getElementsByTagName("批发价").item(0));*/
 		//操作属性
-		dumpAttr(document, document.getElementsByTagName("book").item(0));*/
-		//添加属性
-		addAttr(document, document.getElementsByTagName("book").item(0));
+		dumpAttr(document, document.getElementsByTagName("book").item(0));
 	}
 
-	private static void addAttr(Document document, Node node) throws TransformerException {
-		Attr attr = document.createAttribute("出版社");
-		attr.setTextContent("机械工业出版社");
-		((Element) node).setAttributeNode(attr);
-		TransformerFactory factory = TransformerFactory.newInstance();
-		Transformer transformer = factory.newTransformer();
-		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
-	}
-
-	private static void dumpAttr(Document document, Node node) throws TransformerException {
-		//System.out.println(node.getAttributes().item(0));
-		//node.getAttributes().item(0).setTextContent("1001");
-		Element element = (Element) node;
-		System.out.println(element.getAttribute("id"));
-		element.getAttributeNode("id").setTextContent("1001");
+	private static void dumpAttr(Document document, Node node) {
+		System.out.println(node.getAttributes().item(0));
+		node.getAttributes().item(0).setTextContent("1001");
 		TransformerFactory factory = TransformerFactory.newInstance();
 		Transformer transformer = factory.newTransformer();
 		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));

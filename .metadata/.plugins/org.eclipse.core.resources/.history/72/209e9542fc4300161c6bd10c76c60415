@@ -31,52 +31,19 @@ public class JAXPDom {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		Document document = builder.parse(new File("src\\books.xml"));
-		/*//打印第二本书的作者
+		//打印第二本书的作者
 		dumpSecondAuthor(document);
 		//遍历所有元素节点
 		listAllElements(document);
 		//修改某个元素节点内容
 		updateElement(document);
-		//添加节点,必须是父元素开始
+		//添加节点
 		addElement(document, document.getFirstChild());
 		//特定节点插入元素
 		insertElement(document, document.getElementsByTagName("price").item(1));
-		//删除指定元素，必须是父元素开始
-		deleteElement(document, document.getElementsByTagName("批发价").item(0));
-		//操作属性
-		dumpAttr(document, document.getElementsByTagName("book").item(0));*/
-		//添加属性
-		addAttr(document, document.getElementsByTagName("book").item(0));
 	}
 
-	private static void addAttr(Document document, Node node) throws TransformerException {
-		Attr attr = document.createAttribute("出版社");
-		attr.setTextContent("机械工业出版社");
-		((Element) node).setAttributeNode(attr);
-		TransformerFactory factory = TransformerFactory.newInstance();
-		Transformer transformer = factory.newTransformer();
-		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
-	}
-
-	private static void dumpAttr(Document document, Node node) throws TransformerException {
-		//System.out.println(node.getAttributes().item(0));
-		//node.getAttributes().item(0).setTextContent("1001");
-		Element element = (Element) node;
-		System.out.println(element.getAttribute("id"));
-		element.getAttributeNode("id").setTextContent("1001");
-		TransformerFactory factory = TransformerFactory.newInstance();
-		Transformer transformer = factory.newTransformer();
-		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
-	}
-
-	private static void deleteElement(Document document, Node node) throws TransformerException {
-		node.getParentNode().removeChild(node);
-		TransformerFactory factory = TransformerFactory.newInstance();
-		Transformer transformer = factory.newTransformer();
-		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
-	}
-
-	private static void insertElement(Document document, Node node) throws TransformerException {
+	private static void insertElement(Document document, Node node) {
 		Element element = document.createElement("批发价");
 		element.setTextContent("10.00");
 		node.getParentNode().insertBefore(element, node);
