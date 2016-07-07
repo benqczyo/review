@@ -1,0 +1,27 @@
+package jaxp.dom;
+
+import java.io.File;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+public class JAXPDom {
+	
+	//org.w3c.dom w3c标准接口
+	//org.xml.sax sax接口
+	//javax.xml.parse jaxp具体实现类
+	
+	public static void main(String[] args) {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document document = builder.parse(new File("books.xml"));
+		//打印第二本书的作者
+		NodeList nodes = document.getElementsByTagName("book");
+		if (nodes != null)
+			System.out.println(nodes.item(1).getTextContent());
+	}
+	
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book id="100011">
+		<title>xml教程</title>
+		<author>Benjamin</author>
+		<price>50.00</price>
+	</book>
+	<book id="100012">
+		<title>Java编程思想</title>
+		<author>Lox</author>
+		<price>150.00</price>
+	</book>
+</books>

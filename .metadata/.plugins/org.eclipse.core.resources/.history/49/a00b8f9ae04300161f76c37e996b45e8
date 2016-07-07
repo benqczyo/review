@@ -1,0 +1,5 @@
+package jaxp.dom;
+
+public class JAXPDom {
+
+}

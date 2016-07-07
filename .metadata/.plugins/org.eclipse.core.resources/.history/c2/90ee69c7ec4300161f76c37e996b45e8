@@ -1,0 +1,81 @@
+package jaxp.dom;
+
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class JAXPDom {
+	
+	//org.w3c.dom w3c标准接口
+	//org.xml.sax sax接口
+	//javax.xml.parse jaxp具体实现类
+	
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document document = builder.parse(new File("src\\books.xml"));
+		//打印第二本书的作者
+		dumpSecondAuthor(document);
+		//遍历所有元素节点
+		listAllElements(document);
+		//修改某个元素节点内容
+		updateElement(document);
+		//添加节点
+		insertElement(document, document);
+		
+	}
+
+	private static void insertElement(Document document, Node node) throws TransformerException {
+		Element book = document.createElement("book");
+		Element title = document.createElement("title");
+		title.setTextContent("Java并发编程");
+		Element author = document.createElement("author");
+		author.setTextContent("benqcz");
+		Element price = document.createElement("price");
+		price.setTextContent("100.00");
+		book.appendChild(title);
+		book.appendChild(author);
+		book.appendChild(price);
+		TransformerFactory factory = TransformerFactory.newInstance();
+		Transformer transformer = factory.newTransformer();
+		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
+	}
+
+	private static void updateElement(Document document) throws TransformerException {
+		document.getElementsByTagName("author").item(1).setTextContent("sue");
+		TransformerFactory factory = TransformerFactory.newInstance();
+		Transformer transformer = factory.newTransformer();
+		transformer.transform(new DOMSource(document), new StreamResult("src\\books.xml"));
+	}
+
+	private static void dumpSecondAuthor(Document document) {
+		NodeList nodes = document.getElementsByTagName("author");
+		if (nodes != null)
+			System.out.println(nodes.item(1).getTextContent());
+	}
+	
+	public static void listAllElements(Node node) {
+		if (Node.ELEMENT_NODE == node.getNodeType())
+			System.out.println(node.getNodeName());
+		NodeList nodes = node.getChildNodes();
+		if (nodes != null)
+			for (int i = 0; i < nodes.getLength(); i++)
+				listAllElements(nodes.item(i));
+	}
+	
+}

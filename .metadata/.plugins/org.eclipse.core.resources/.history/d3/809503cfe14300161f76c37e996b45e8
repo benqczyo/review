@@ -1,0 +1,33 @@
+package jaxp.dom;
+
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class JAXPDom {
+	
+	//org.w3c.dom w3c标准接口
+	//org.xml.sax sax接口
+	//javax.xml.parse jaxp具体实现类
+	
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document document = builder.parse(new File("src\\books.xml"));
+		//打印第二本书的作者
+		NodeList nodes = document.getElementsByTagName("autho");
+		//if (nodes != null)
+			System.out.println(nodes.item(1).getTextContent());
+		//遍历所有元素节点
+		nodes = document.getChildNodes();
+		for
+	}
+	
+}
